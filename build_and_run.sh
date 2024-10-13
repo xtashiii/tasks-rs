@@ -10,6 +10,7 @@ fi
 
 echo "Building vue project"
 cd frontend || { echo "Frontend folder not found!"; exit;  }
+npm install
 npm run build
 
 if [ $? -ne 0 ]; then
