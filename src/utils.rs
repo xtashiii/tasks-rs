@@ -17,7 +17,7 @@ impl Task {
     }
 }
 
-#[derive(serde::Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct UpdateTaskData {
     pub name: Option<String>,
     pub completed: Option<bool>,
